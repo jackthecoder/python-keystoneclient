@@ -46,7 +46,7 @@ class OidcPassword(federated.FederatedBaseAuth):
     def __init__(self, auth_url, identity_provider, protocol,
                  username, password, client_id, client_secret,
                  access_token_endpoint, scope='profile',
-                 grant_type='password'):
+                 grant_type='password', **kwargs): 
         """The OpenID Connect plugin.
 
         It expects the following:
